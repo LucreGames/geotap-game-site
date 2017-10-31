@@ -12,11 +12,6 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const PrerenderSpaPlugin = require('prerender-spa-plugin')
 
-// Pulling vue router config to determine which routes to prerender
-const _ = require('lodash')
-const routes = require ('../src/router/routes.coffee')
-prerenderRoutes = _.pull(_.flatMap(routes, 'path'), '*')
-
 const env = config.build.env
 
 function resolve (dir) {
@@ -113,7 +108,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       path.join(resolve('dist')),
       
       // Routes to prerender
-      prerenderRoutes
+      ['/', '/presskit']
     )
   ]
 })
