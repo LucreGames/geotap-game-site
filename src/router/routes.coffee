@@ -1,13 +1,16 @@
 import Home from '@/pages/Home'
-import _ from 'lodash'
+import PressKit from '@/pages/PressKit'
 
 routes = [
   {
     path: '/'
     name: 'Home'
     component: Home
-    meta: 
-      title: "Home Page Meta Title"
+  }
+  {
+    path: '/presskit'
+    name: 'PressKit'
+    component: PressKit
   }
   {
     # 404 Catch all
