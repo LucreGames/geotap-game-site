@@ -17,8 +17,6 @@ export default {
   text-align center
   color #2c3e50
   padding-top 60px
-  min-height 100%
-
-  background-image linear-gradient(0deg, #FA5B75, #5A3662)
+  height 100%
 
 </style>

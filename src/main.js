@@ -9,10 +9,7 @@ import router from './router'
 Vue.config.productionTip = false
 
 import VueVisual from 'vue-visual'
-Vue.component('visual', VueVisual).options.setDefaults({
-	offset: 1000,
-	transition: 'vv-fade'
-})
+Vue.component('visual', VueVisual).options.setDefaults({})
 
 import SocialLinks from './components/SocialLinks'
 import LucreLogo from './components/LucreLogo'

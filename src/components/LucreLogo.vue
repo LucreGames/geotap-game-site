@@ -6,7 +6,8 @@
 
     visual(:image='logo'
       load='visible'
-      offset='200')
+      offset='200'
+      alt="Lucre Games Logo - Indie Game Developers in Sacramento")
 </template>
 
 <script>

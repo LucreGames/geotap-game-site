@@ -2,7 +2,7 @@
 .lucre-social-links
   ul 
     li(v-for="link in links")
-      a(:class="'icon-'+link.icon" :href="link.url"
+      a(:class="'icon-'+link.icon" :href="link.url" target="_blank"
         data-gtm='Social Links > Click' :data-gtm-value="link.icon") 
 </template>
 
