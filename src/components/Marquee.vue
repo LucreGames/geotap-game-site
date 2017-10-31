@@ -1,15 +1,17 @@
 <template lang="pug">
 .lucre-marquee
-  geotap-logo(heading="h1")
-  h2 A subtly addictive stress-relief game
 
-  spinning-cube 
+  .v-center-content 
+    geotap-logo(heading="h1")
+    h2 A subtly addictive stress-relief game
 
-  h3 Out now on Android and iOS
+    spinning-cube 
 
-  store-links 
+    h3 Out now on Android and iOS
 
-  span.icon-keyboard_arrow_down 
+    store-links 
+
+    //- span.icon-keyboard_arrow_down 
 </template>
 
 <script lang="coffee">

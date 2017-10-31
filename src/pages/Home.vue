@@ -1,11 +1,11 @@
 <template lang="pug">
 .page.home-page
   marquee
-  game-cards
+  //- game-cards
 
-  reviews
+  //- reviews
 
-  lucre-footer
+  //- lucre-footer
 
   .gradient-backgrounds 
   

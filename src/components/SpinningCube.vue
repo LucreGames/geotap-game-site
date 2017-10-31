@@ -21,6 +21,8 @@ export default {
 <style lang="stylus">
 
 .lucre-spinning-cube
+  margin rem(80px) 0
+
   @keyframes spinningH {
     from {
       transform rotateX(0deg) rotateY(0deg)
@@ -38,7 +40,7 @@ export default {
     animation spinningH 10s infinite linear
 
 
-  cubeSize = 90px 
+  cubeSize = 70px 
 
   .cube 
     position relative
@@ -56,7 +58,7 @@ export default {
   
   .cube div 
     background-color  #2E272F
-    background-image linear-gradient(45deg, #2AB8ED, #D4F3FF 130%)
+    background-image linear-gradient(45deg, #D4F3FF -50%, #2AB8ED 90%)
 
   .cube>div:nth-child(1) 
     transform translateZ(cubeSize)
