@@ -1,6 +1,8 @@
 <template lang="pug">
 .lucre-store-links
 
+  h3 Out now on Android and iOS
+
   a(:href="playStore.url" 
     data-gtm="App Store Links > Click" data-gtm-value="Play Store")
     img(:src="playStore.image")
@@ -34,6 +36,7 @@ export default {
 
 .lucre-store-links
   max-width rem(500px)
+  margin 0 auto
 
   img 
     transition all .25s ease 
@@ -47,8 +50,8 @@ export default {
 
     &:hover
       transform translateY(-3px)
-      img 
-        filter drop-shadow(0px 5px 10px rgba(#222, 0.2))
+      // img 
+      //   filter drop-shadow(0px 5px 10px rgba(#222, 0.2))
 
     &:active 
       transform translateY(-3px) scale(0.97)

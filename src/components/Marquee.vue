@@ -7,8 +7,6 @@
 
     spinning-cube 
 
-    h3 Out now on Android and iOS
-
     store-links 
 
     //- span.icon-keyboard_arrow_down 
@@ -32,5 +30,6 @@ export default {
 <style lang="stylus">
 
 .lucre-marquee
-  height 100%
+  height 95%
+  position relative
 </style>

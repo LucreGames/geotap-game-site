@@ -23,7 +23,8 @@ export default {
 <style lang="stylus">
 
 .lucre-logo
+  margin rem(80px) 0 rem(40px)
   .vv-visual 
-    max-width rem(120px)
+    max-width rem(140px)
     margin 0 auto 
 </style>
