@@ -48,9 +48,10 @@ export default {
   data: -> 
     activeGradient: 0
     meta: 
-      title: 'title test'
+      title: 'GeoTap Game | Relaxing Casual Mobile Game'
       description: 'description test'
-      image: 'image test'
+      image: 'http://geotapgame.com/static/geotap-game-lucre-games-lowpoly-3d-casual-relaxing-mobile-game.png'
+      route: '/'
 
 
   mounted: -> 

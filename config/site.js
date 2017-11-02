@@ -4,7 +4,7 @@ module.exports = {
   favicon: "../src/assets/favicon.png",
 
   page: {
-    title: "New Game | Lucre Games",
+    title: "GeoTap Game | Relaxing Casual Mobile Game",
     description: "Page description",
     keywords: "Casual, Mobile Games, iOS Game, Android Game, Relaxing",
     url: "http://geotapgame.com",
@@ -19,7 +19,7 @@ module.exports = {
   },
 
   social: {
-    image: "http://geotapgame.com/static/img/geotap-game-lucre-games-casual-relaxing-mobile-game.png",
+    image: "http://geotapgame.com/static/geotap-game-lucre-games-lowpoly-3d-casual-relaxing-mobile-game.png",
     links: [
       { icon: 'facebook', url: 'https://www.facebook.com/LucreGames/' },
       { icon: 'twitter', url: 'https://twitter.com/LucreGames/' },
