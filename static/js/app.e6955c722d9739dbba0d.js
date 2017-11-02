@@ -843,7 +843,7 @@ $win = __WEBPACK_IMPORTED_MODULE_5_jquery___default()(window);
   methods: {
     onScroll: function(e) {
       var pos;
-      pos = $win.scrollTop() + $win.outerHeight() * .7;
+      pos = $win.scrollTop() + ($win.outerHeight() * .7);
       return Object(__WEBPACK_IMPORTED_MODULE_4_lodash__["forEachRight"])(this.gradientAreas, (g, i) => {
         if (pos >= __WEBPACK_IMPORTED_MODULE_5_jquery___default()(g).offset().top) {
           this.activeGradient = i;
@@ -1206,4 +1206,4 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ })
 
 },["NHnr"]);
-//# sourceMappingURL=app.1119690679177c977394.js.map
+//# sourceMappingURL=app.e6955c722d9739dbba0d.js.map
