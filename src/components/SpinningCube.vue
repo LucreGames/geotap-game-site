@@ -40,7 +40,7 @@ export default {
     animation spinningH 10s infinite linear
 
 
-  cubeSize = 70px 
+  cubeSize = 4.5rem 
 
   .cube 
     position relative
