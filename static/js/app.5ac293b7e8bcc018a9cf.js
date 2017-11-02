@@ -827,7 +827,7 @@ $win = __WEBPACK_IMPORTED_MODULE_5_jquery___default()(window);
       activeGradient: 0,
       meta: {
         title: 'GeoTap Game | Relaxing Casual Mobile Game',
-        description: 'description test',
+        description: 'A subtly addictive stress-relief game',
         image: 'http://geotapgame.com/static/geotap-game-lucre-games-lowpoly-3d-casual-relaxing-mobile-game.png',
         route: '/'
       }
@@ -1206,4 +1206,4 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ })
 
 },["NHnr"]);
-//# sourceMappingURL=app.e6955c722d9739dbba0d.js.map
+//# sourceMappingURL=app.5ac293b7e8bcc018a9cf.js.map
