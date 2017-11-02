@@ -49,7 +49,7 @@ export default {
     activeGradient: 0
     meta: 
       title: 'GeoTap Game | Relaxing Casual Mobile Game'
-      description: 'description test'
+      description: 'A subtly addictive stress-relief game'
       image: 'http://geotapgame.com/static/geotap-game-lucre-games-lowpoly-3d-casual-relaxing-mobile-game.png'
       route: '/'
 
