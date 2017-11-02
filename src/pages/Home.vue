@@ -1,17 +1,23 @@
 <template lang="pug">
 .page.home-page
 
-  .gradient
+  .gradient-area
   marquee
   game-cards
 
-  .gradient 
+  .gradient-area 
   reviews
 
-  .gradient 
+  .gradient-area 
   lucre-footer
 
   .gradient-backgrounds 
+    transition(name="fade")
+      .gradient.purple(v-show="activeGradient == 0")
+    transition(name="fade")
+      .gradient.blue(v-show="activeGradient == 1")
+    transition(name="fade")
+      .gradient.orange(v-show="activeGradient == 2")
   
 </template>
 
@@ -22,6 +28,11 @@ import Marquee from '@/components/Marquee'
 import GameCards from '@/components/GameCards'
 import Reviews from '@/components/Reviews'
 import Footer from '@/components/Footer'
+
+import { throttle, forEachRight } from 'lodash'
+import $ from 'jquery'
+
+$win = $(window)
 
 export default {
   name: 'home-page',
@@ -35,10 +46,26 @@ export default {
     'lucre-footer': Footer 
 
   data: -> 
+    activeGradient: 0
     meta: 
       title: 'title test'
       description: 'description test'
       image: 'image test'
+
+
+  mounted: -> 
+    @gradientAreas = $(@$el).find('.gradient-area')
+    $win.on 'scroll', throttle(@onScroll,50)
+  destroyed: -> 
+    $win.off 'scroll'
+
+  methods: 
+    onScroll:(e) -> 
+      pos = $win.scrollTop() + $win.outerHeight()*.7
+      forEachRight @gradientAreas, (g, i) =>
+        if pos >= $(g).offset().top
+          @activeGradient = i
+          return false
 }
 </script>
 
@@ -46,9 +73,17 @@ export default {
 .page.home-page
   height 100%
 
-  .gradient-backgrounds 
+  .gradient
     fill()
     position fixed
     z-index -1
-    background-image linear-gradient(0deg, #FA5B75, #5A3662)
+
+    &.purple 
+      background-image linear-gradient(0deg, #FA5B75, #5A3662)
+
+    &.blue 
+      background-image linear-gradient(0deg, #2D3EA8, #3BE9F9)
+
+    &.orange 
+      background-image linear-gradient(0deg, #FFC371, #FF5D6A)
 </style>

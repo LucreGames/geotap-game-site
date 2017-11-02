@@ -1,7 +1,7 @@
 <template lang="pug">
 .lucre-store-links
 
-  h3 Out now on Android and iOS
+  h3 Play for free on Android and iOS
 
   a(:href="playStore.url" 
     data-gtm="App Store Links > Click" data-gtm-value="Play Store")
