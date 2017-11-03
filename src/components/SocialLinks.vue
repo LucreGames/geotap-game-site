@@ -26,7 +26,7 @@ export default {
     display inline-block 
 
     a  
-      font-size 28px 
-      margin 0 rem(5px)
+      font-size 34px 
+      margin 0 rem(10px)
       display inline-block
 </style>
