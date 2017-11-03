@@ -1,7 +1,8 @@
 <template lang="pug">
 .lucre-game-cards
-  img(:src="cards"
-    alt="Lucre Games GeoTap game screens, a relaxing casual game with lowpoly design")
+  .image-wrapper 
+    img(:src="cards"
+      alt="Lucre Games GeoTap game screens, a relaxing casual game with lowpoly design")
 </template>
 
 <script lang="coffee">
@@ -17,14 +18,24 @@ export default {
 
 .lucre-game-cards
   padding 0
-  margin 0 -10%
+  overflow hidden
 
-  @media(max-width tablet-landscape)
-    padding 0
-    margin-left -20%
-    margin-right -20%
+  .image-wrapper
+    margin 0 -10%
 
-  @media(max-width tablet)
-    margin-left -60%
-    margin-right -60%
+    @media(max-width tablet-landscape)
+      padding 0
+      margin-left -20%
+      margin-right -20%
+
+    @media(max-width tablet)
+      margin-left -60%
+      margin-right -60%
+
+  img
+    width 100%
+    max-width initial
+    display block
+
+    
 </style>
