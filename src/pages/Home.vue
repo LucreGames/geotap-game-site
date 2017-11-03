@@ -15,9 +15,9 @@
     transition(name="fade")
       .gradient.purple(v-show="activeGradient == 0")
     transition(name="fade")
-      .gradient.blue(v-show="activeGradient == 1")
+      .gradient.blue(v-show="activeGradient == 1" style="display: none;")
     transition(name="fade")
-      .gradient.orange(v-show="activeGradient == 2")
+      .gradient.orange(v-show="activeGradient == 2" style="display: none;")
   
 </template>
 
@@ -57,6 +57,8 @@ export default {
   mounted: -> 
     @gradientAreas = $(@$el).find('.gradient-area')
     $win.on 'scroll', throttle(@onScroll,50)
+    @onScroll()
+    
   destroyed: -> $win.off 'scroll'
 
   methods: 
