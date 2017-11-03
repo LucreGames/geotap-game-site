@@ -48,7 +48,7 @@ export default {
   data: -> 
     activeGradient: 0
     meta: 
-      title: 'GeoTap Game | Relaxing Casual Mobile Game'
+      title: 'GeoTap Game for iOS and Android'
       description: 'A subtly addictive stress-relief game'
       image: 'http://geotapgame.com/static/geotap-game-lucre-games-lowpoly-3d-casual-relaxing-mobile-game.png'
       route: '/'
@@ -57,8 +57,7 @@ export default {
   mounted: -> 
     @gradientAreas = $(@$el).find('.gradient-area')
     $win.on 'scroll', throttle(@onScroll,50)
-  destroyed: -> 
-    $win.off 'scroll'
+  destroyed: -> $win.off 'scroll'
 
   methods: 
     onScroll:(e) -> 

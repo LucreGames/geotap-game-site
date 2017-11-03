@@ -24,6 +24,10 @@ export default {
 
 .lucre-logo
   margin rem(80px) 0 rem(40px)
+
+  a 
+    display inline-block
+
   .vv-visual 
     max-width rem(140px)
     margin 0 auto 

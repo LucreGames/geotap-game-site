@@ -31,5 +31,15 @@ export default {
 
 .lucre-marquee
   height 95%
+  margin 0 auto
   position relative
+
+  .v-center-content 
+    width 90%
+
+  .lucre-geotap-logo,
+  h2,
+  .lucre-store-links 
+    z-index 2
+    position relative
 </style>

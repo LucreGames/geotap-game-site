@@ -11,6 +11,9 @@ Vue.config.productionTip = false
 import VueVisual from 'vue-visual'
 Vue.component('visual', VueVisual).options.setDefaults({})
 
+import inViewportDirective from 'vue-in-viewport-directive'
+Vue.directive('in-viewport', inViewportDirective)
+
 import SocialLinks from './components/SocialLinks'
 import LucreLogo from './components/LucreLogo'
 

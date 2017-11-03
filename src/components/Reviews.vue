@@ -22,7 +22,7 @@ export default {
         copy: "Was turned on to this game from a friend and it’s great! Super easy to play but very challenging and fun… I find myself laughing because I just can’t keep from wanting to go fast and patience is definitely your friend with this game. Great job!"
       }
       {
-        title: "Hypnotic, Engaging and Challenging!"
+        title: "Hypnotic, engaging and challenging!"
         stars: 5
         copy: "An elegant blend of art and challenge, the game will work your brain, while exercising your need to fidget&mdash;all while providing and ambient soundtrack that you can somewhat control. Very nice."
       }

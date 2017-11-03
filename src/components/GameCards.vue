@@ -16,5 +16,15 @@ export default {
 <style lang="stylus">
 
 .lucre-game-cards
-  padding 0 rem(50px)
+  padding 0
+  margin 0 -10%
+
+  @media(max-width tablet-landscape)
+    padding 0
+    margin-left -20%
+    margin-right -20%
+
+  @media(max-width tablet)
+    margin-left -60%
+    margin-right -60%
 </style>

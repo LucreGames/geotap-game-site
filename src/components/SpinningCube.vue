@@ -1,5 +1,5 @@
 <template lang="pug">
-.lucre-spinning-cube
+.lucre-spinning-cube(:class="{ ready: ready }")
   .cube-container 
     .cube.animate 
       div 
@@ -15,6 +15,14 @@
 
 export default {
   name: 'spinning-cube'
+
+  data: -> ready: false
+
+  mounted: ->
+    setTimeout @buildIn, 300
+
+  methods: 
+    buildIn: -> @ready = true
 }
 </script>
 
@@ -22,6 +30,12 @@ export default {
 
 .lucre-spinning-cube
   margin rem(80px) 0
+  z-index 1
+  gpu-cache()
+  transition transform 1.8s cubic-bezier(.18,.84,.56,1.11)
+
+  &:not(.ready) 
+    transform translateY(-65vh)
 
   @keyframes spinningH {
     from {
@@ -49,6 +63,7 @@ export default {
     width cubeSize*2
     transition transform 2s linear
     transform-style preserve-3d
+    gpu-cache()
 
   .cube>div 
     position absolute
@@ -59,6 +74,7 @@ export default {
   .cube div 
     background-color  #D4F3FF
     background-image linear-gradient(45deg, #D4F3FF -50%, #2AB8ED 90%)
+    gpu-cache()
 
   .cube>div:nth-child(1) 
     transform translateZ(cubeSize)

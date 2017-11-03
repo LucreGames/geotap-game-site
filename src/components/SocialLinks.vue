@@ -28,4 +28,5 @@ export default {
     a  
       font-size 28px 
       margin 0 rem(5px)
+      display inline-block
 </style>
