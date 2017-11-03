@@ -1,6 +1,6 @@
 site = require '@/../config/site'
 
-
+title = document.querySelector("title")
 ogImage = document.querySelector("meta[property='og:image']")
 ogTwitterImage = document.querySelector("meta[property='twitter:image']")
 
@@ -19,6 +19,7 @@ ogSiteName = document.querySelector("meta[property='og:site_name']")
 module.exports =
   beforeMount: -> 
     return unless @meta 
+    title.text = @meta.title if @meta.title
     ogTitle.content = @meta.title if @meta.title
     ogTwitterTitle.content = @meta.title if @meta.title
     
