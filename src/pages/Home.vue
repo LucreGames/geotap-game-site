@@ -63,10 +63,11 @@ export default {
   methods: 
     onScroll:(e) -> 
       pos = ($win.scrollTop() + ($win.outerHeight()*.7))
-      # forEachRight @gradientAreas, (g, i) =>
-      #   if pos >= $(g).offset().top
-      #     @activeGradient = i
-      #     return false
+      for g in @gradientAreas.get().reverse()
+        i = @gradientAreas.index(g)
+        if pos >= $(g).offset().top
+          @activeGradient = i
+          return false
 }
 </script>
 

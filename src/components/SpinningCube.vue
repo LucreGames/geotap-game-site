@@ -57,7 +57,7 @@ export default {
     background-position center center
   
   .cube div 
-    background-color  #2E272F
+    background-color  #D4F3FF
     background-image linear-gradient(45deg, #D4F3FF -50%, #2AB8ED 90%)
 
   .cube>div:nth-child(1) 
