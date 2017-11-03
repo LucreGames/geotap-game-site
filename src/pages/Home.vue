@@ -73,6 +73,7 @@ export default {
 <style lang="stylus" scoped>
 .page.home-page
   height 100%
+  overflow hidden
 
   .gradient
     fill()
