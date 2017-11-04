@@ -10,6 +10,7 @@ ogTwitterTitle = document.querySelector("meta[property='twitter:title']")
 ogUrl = document.querySelector("meta[property='og:url']")
 ogTwitterUrl = document.querySelector("meta[property='twitter:url']")
 
+description = document.querySelector("meta[name='description']")
 ogDescr = document.querySelector("meta[property='og:description']")
 ogTwitterDescr = document.querySelector("meta[property='twitter:description']")
 
@@ -26,6 +27,7 @@ module.exports =
     ogImage.content = @meta.image if @meta.image
     ogTwitterImage.content = @meta.image if @meta.image
 
+    description.content = @meta.description if @meta.description
     ogDescr.content = @meta.description if @meta.description
     ogTwitterDescr.content = @meta.description if @meta.description
 
