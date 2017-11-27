@@ -16,9 +16,11 @@ Vue.directive('in-viewport', inViewportDirective)
 
 import SocialLinks from './components/SocialLinks'
 import LucreLogo from './components/LucreLogo'
+import TextContent from './components/TextContent'
 
 Vue.component('social-links', SocialLinks)
 Vue.component('lucre-logo', LucreLogo)
+Vue.component('text-content', TextContent)
 
 /* eslint-disable no-new */
 new Vue({

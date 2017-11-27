@@ -3,6 +3,9 @@
   geotap-logo(heading="h4")
   store-links
 
+  nav.footer 
+    router-link(to="presskit") Press kit 
+  
   lucre-logo 
   social-links(:links="socialLinks")
 
@@ -30,4 +33,17 @@ export default {
 
 .lucre-footer
   padding rem(60px)
+
+  nav 
+    padding-top rem(40px)
+
+    a  
+      font-size rem(26px)
+      text-transform uppercase 
+      letter-spacing rem(2px)
+      transition opacity 0.25s ease 
+
+      &:hover, &:active 
+        opacity 0.7
+
 </style>
