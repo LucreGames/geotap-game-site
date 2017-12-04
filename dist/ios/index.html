@@ -14,11 +14,12 @@
           event: "genericEvent",
           genericCategory: "Store URL > iOS",
           genericAction: "Redirect",
-          genericLabel: encodeURIComponent(document.referrer),
+          genericLabel: document.referrer,
           genericValue: null
         });
 
         setTimeout( function() {
+          console.log(document.referrer);
           window.location = "https://itunes.apple.com/us/app/geotap-game/id1268346417?mt=8";
         }, 200);
 
