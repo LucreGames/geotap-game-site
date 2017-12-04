@@ -2,12 +2,12 @@
 .lucre-spinning-cube(:class="{ ready: ready }")
   .cube-container 
     .cube.animate 
-      div 
-      div 
-      div 
-      div 
-      div 
-      div 
+      div(v-if="$parent.ready")
+      div(v-if="$parent.ready")
+      div(v-if="$parent.ready")
+      div(v-if="$parent.ready") 
+      div(v-if="$parent.ready") 
+      div(v-if="$parent.ready") 
 
 </template>
 

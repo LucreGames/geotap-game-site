@@ -18,7 +18,8 @@ export default {
 .lucre-text-content   
   text-align left 
   max-width rem(800px)
-  margin rem(80px) auto
+  margin 0 auto
+  padding rem(80px) 0
 
   * 
     color white 

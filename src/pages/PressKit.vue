@@ -27,6 +27,19 @@
     //- Photos in device/in location
     //- Trailer (soon…)
 
+    strong Logo Images:
+    p 
+      img.screen(:src='logos[0]')
+      img.screen(:src='logos[1]')
+
+    strong Promotion Screens:
+    p 
+      img.screen(:src='promo[0]')
+      img.screen(:src='promo[1]')
+      img.screen(:src='promo[2]')
+      img.screen(:src='promo[3]')
+      img.screen(:src='promo[4]')
+
     strong Developer:
     p 
       a(href="http://lucregames.com" target="_blank" 
@@ -55,8 +68,8 @@
 
     strong Press / Business contact:
     p 
-      a(href="mailto:hello@thelucre.com"
-         data-gtm="Presskit > Click" data-gtm-value="Lucre Games Email") hello@thelucre.com
+      a(href="mailto:hello@lucregames.com"
+         data-gtm="Presskit > Click" data-gtm-value="Lucre Games Email") hello@lucregames.com
 
     strong Social:
     p 
@@ -103,6 +116,19 @@ export default {
       description: 'Geotap is Lucre Games’ first mobile launch and was thought to be simple a exercise in shipping a title with the goal creating a platform to launch games with emotionally rich experiences that ride a fine line between pure art experiences and traditional game play.'
       image: 'http://geotapgame.com/static/geotap-game-lucre-games-lowpoly-3d-casual-relaxing-mobile-game-press-kit.png'
       route: '/presskit'
+
+    promo: [
+      require '@/assets/images/promo/geotap-game-lucre-games-ios-android-casual-mobile-game-promo-1.png'
+      require '@/assets/images/promo/geotap-game-lucre-games-ios-android-casual-mobile-game-promo-2.png'
+      require '@/assets/images/promo/geotap-game-lucre-games-ios-android-casual-mobile-game-promo-3.png'
+      require '@/assets/images/promo/geotap-game-lucre-games-ios-android-casual-mobile-game-promo-4.png'
+      require '@/assets/images/promo/geotap-game-lucre-games-ios-android-casual-mobile-game-promo-5.png'
+    ]
+
+    logos: [
+      require '@/assets/images/geotap-game-logo-lucre-games-white.png'
+      require '@/assets/images/geotap-game-logo-lucre-games-black.png'
+    ]
 }
 </script>
 
@@ -117,4 +143,8 @@ export default {
     z-index -1
     background-image linear-gradient(0deg, #FA5B75, #5A3662)
 
+  img.screen 
+    max-width 30%
+    margin-right 3% 
+    margin-bottom 3%
 </style>
