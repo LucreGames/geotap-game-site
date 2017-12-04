@@ -11,10 +11,11 @@
         
         var datalayer = window.dataLayer || [];
         dataLayer.push({
-          category: "Store URL > iOS",
-          action: "Redirect",
-          label: encodeURIComponent(document.referrer),
-          value: null
+          event: "genericEvent",
+          genericCategory: "Store URL > iOS",
+          genericAction: "Redirect",
+          genericLabel: encodeURIComponent(document.referrer),
+          genericValue: null
         });
 
         setTimeout( function() {
