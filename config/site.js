@@ -14,8 +14,8 @@ module.exports = {
     name: "New Game",
     description: "Game description",
     trailerUrl: "", 
-    playStoreUrl: "https://play.google.com/store/apps/details?id=com.roundhouse.geotap",
-    appStoreUrl: "https://itunes.apple.com/us/app/geotap-game/id1268346417?mt=8"
+    playStoreUrl: "https://www.geotapgame.com/android",
+    appStoreUrl: "https://www.geotapgame.com/ios"
   },
 
   social: {
