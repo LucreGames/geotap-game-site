@@ -4,7 +4,10 @@
   store-links
 
   nav.footer 
-    router-link(to="presskit") Press kit 
+    div 
+      router-link(to="presskit") Press kit 
+    div 
+      router-link(to="privacy") Privacy 
   
   lucre-logo 
   social-links(:links="socialLinks")
@@ -37,6 +40,9 @@ export default {
   nav 
     padding-top rem(40px)
 
+    div 
+      margin-bottom rem(15px) 
+      
     a  
       font-size rem(26px)
       text-transform uppercase 

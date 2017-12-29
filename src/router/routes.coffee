@@ -1,5 +1,6 @@
 import Home from '@/pages/Home'
 import PressKit from '@/pages/PressKit'
+import Privacy from '@/pages/Privacy'
 
 routes = [
   {
@@ -11,6 +12,11 @@ routes = [
     path: '/presskit'
     name: 'PressKit'
     component: PressKit
+  }
+  {
+    path: '/privacy'
+    name: 'Privacy'
+    component: Privacy
   }
   {
     # 404 Catch all

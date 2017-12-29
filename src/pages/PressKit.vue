@@ -93,6 +93,8 @@
       a(href="https://instagram.com/LucreGames" target="_blank"
          data-gtm="Presskit > Click" data-gtm-value="Lucre Games Instagram") instagram.com/LucreGames
   
+  lucre-footer
+  
   .gradient-area
 
 </template>
@@ -101,6 +103,7 @@
 metaMixin = require '@/mixins/meta'
 
 import GeotapLogo from '@/components/GeotapLogo'
+import Footer from '@/components/Footer'
 
 export default {
   name: 'presskit-page',
@@ -109,6 +112,7 @@ export default {
 
   components: 
     'geotap-logo': GeotapLogo
+    'lucre-footer': Footer
 
   data: -> 
     meta: 

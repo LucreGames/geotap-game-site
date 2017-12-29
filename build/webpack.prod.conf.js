@@ -109,7 +109,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       path.join(resolve('dist')),
       
       // Routes to prerender
-      ['/', '/presskit']
+      ['/', '/presskit', '/privacy']
     )
   ]
 })
