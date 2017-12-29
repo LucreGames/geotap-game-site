@@ -8,7 +8,7 @@
   text-content 
 
     strong Overview:
-    p Thank you for your interest in GeoTap by Lucre Games! Here's what you need to know about your data while using this software: GeoTap does not track identifying personal information, but we do use system and gameplay analytics to learn about how our users experience the game. We also save an anonymous user profile for each device running the game. This is used to track advertising and analytics events. The game is created with Unity software, which does its own tracking explained below.   
+    p Thank you for your interest in GeoTap by Lucre Games! Here's what you need to know about your data while using this software: GeoTap does not track identifying personal information, but we do use system and gameplay analytics to learn about how our users experience the game. We also save an anonymous user profile for each device running the game. This is used to track advertising and analytics events. Lucre Games does not share any user data it collects from GeoTap with outside parties, except implicilty with Unity Technologies and Google  and Apple platforms that distribute the software. The game is created with Unity software, which does its own tracking explained below.   
 
     strong Software:
     p Unity has probably collected some or all of the following information about your device: unique device identifiers (e.g., IDFV for iOS devices and Android ID for Android devices) ); IP address; country of install (mapped from IP address); device manufacturer and model platform type (iOS, Android, Mac, Windows, etc.) and the operating system and version running on your system or device; language; CPU information such as model, the number of CPUs present, frequency, and instruction set support flags; the graphics card type and vendor name; graphics card driver name and version (example: "nv4disp.dll 6.10.93.71"); which graphics API is in use (example: "OpenGL 2.1" or "Direct3D 9.0c"); amount of system and video RAM present; current screen resolution; version of the Unity Editor used to create the  game; sensor flags (e.g., device support for gyroscope, touch pressure or accelerometer); application or bundle identification ("app ID") of the game installed; unique advertising identifiers provided for iOS and Android devices (e.g., IDFA or Android Ad ID); and a checksum of all the data that gets sent to verify that it did transmit correctly. 
@@ -21,7 +21,7 @@
 
     strong Game Services: 
     p GeoTap uses Google Play Games Services for Android devices and Game Center services for iOS devices to host leaderboards and achievements. You have the option to play GeoTap without these services, but the related features will not be accessible. GeoTap does not store any information about your account with these services. 
-    
+
   lucre-footer 
 
   .gradient-area
