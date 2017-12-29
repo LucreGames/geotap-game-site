@@ -69,6 +69,9 @@ export default {
         if pos >= $(g).offset().top
           @activeGradient = i
           return false
+
+      # Defualt to the first gradient as a backup
+      @activeGradient = 0
 }
 </script>
 
