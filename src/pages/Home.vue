@@ -53,6 +53,9 @@ export default {
       image: 'http://geotapgame.com/static/geotap-game-lucre-games-lowpoly-3d-casual-relaxing-mobile-game.png'
       route: '/'
 
+  watch: 
+    '$parent.ready': (nv,ov) ->
+      @onScroll()
 
   mounted: -> 
     @gradientAreas = $(@$el).find('.gradient-area')

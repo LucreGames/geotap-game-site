@@ -1,11 +1,19 @@
 <template lang="pug">
 #app
-  router-view
+  transition(name="fade")
+    router-view(v-show="ready")
 </template>
 
 <script lang="coffee">
 export default {
   name: 'app'
+
+  data: -> ready: false 
+
+  mounted: ->
+    setTimeout =>
+      this.ready = true;
+    , 200
 }
 </script>
 

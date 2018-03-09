@@ -46,7 +46,7 @@ export default {
   data: -> 
     meta: 
       title: 'Privacy Policy for GeoTap Game'
-      description: 'TODO'
+      description: ''
       image: 'http://geotapgame.com/static/geotap-game-lucre-games-lowpoly-3d-casual-relaxing-mobile-game.png'
       route: '/privacy'
 }
