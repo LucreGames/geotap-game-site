@@ -11,9 +11,10 @@ export default {
   data: -> ready: false 
 
   mounted: ->
-    setTimeout =>
-      this.ready = true;
-    , 200
+    setTimeout @makeReady, 200
+
+  methods: 
+    makeReady: -> @ready = true
 }
 </script>
 
