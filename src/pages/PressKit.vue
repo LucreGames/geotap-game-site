@@ -88,8 +88,8 @@
          data-gtm="Presskit > Click" data-gtm-value="Lucre Games Facebook") facebook.com/LucreGames
     p  
       span Itch.io: 
-      a(href="https://thelucre.itch.io" target="_blank"
-         data-gtm="Presskit > Click" data-gtm-value="Lucre Games Itch") thelucre.itch.io
+      a(href="https://LucreGames.itch.io" target="_blank"
+         data-gtm="Presskit > Click" data-gtm-value="Lucre Games Itch") LucreGames.itch.io
     p  
       span Dribble: 
       a(href="https://dribbble.com/LucreGames" target="_blank"

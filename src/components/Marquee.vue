@@ -41,7 +41,7 @@ export default {
   methods: 
     # Scroll down to the next main section
     onDownArrowClick: ->
-      $('html, body').animate({ scrollTop: $(".lucre-game-cards").offset().top - 50, easing: 'swing' }, 1000); 
+      $('html, body').animate({ scrollTop: $(".lucre-laurels").offset().top - 50, easing: 'swing' }, 1600); 
 
     buildin: ->
       @ready = true

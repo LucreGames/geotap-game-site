@@ -6,9 +6,11 @@
   game-cards
 
   laurels
+  reviews
 
   .gradient-area 
-  reviews
+  .unlockables 
+    img(:src='unlockableImg')
 
   .gradient-area 
   lucre-footer
@@ -57,6 +59,8 @@ export default {
       image: 'http://geotapgame.com/static/geotap-game-lucre-games-lowpoly-3d-casual-relaxing-mobile-game.png'
       route: '/'
 
+    unlockableImg: require '@/assets/images/geotap-game-mobile-unlockable-low-poly-shapes.png'
+
   watch: 
     '$parent.ready': (nv,ov) ->
       @onScroll()
@@ -64,7 +68,6 @@ export default {
   mounted: -> 
     @gradientAreas = $(@$el).find('.gradient-area')
     $win.on 'scroll', throttle(@onScroll,50)
-    @onScroll()
     
   destroyed: -> $win.off 'scroll'
 

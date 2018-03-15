@@ -21,8 +21,8 @@ module.exports = {
   social: {
     image: "http://geotapgame.com/static/geotap-game-lucre-games-lowpoly-3d-casual-relaxing-mobile-game.png",
     links: [
-      { icon: 'facebook', url: 'https://www.facebook.com/LucreGames/' },
       { icon: 'twitter', url: 'https://twitter.com/LucreGames/' },
+      { icon: 'facebook', url: 'https://www.facebook.com/LucreGames/' },
     ]
   },
   
