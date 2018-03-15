@@ -5,6 +5,8 @@
   marquee
   game-cards
 
+  laurels
+
   .gradient-area 
   reviews
 
@@ -28,6 +30,7 @@ import Marquee from '@/components/Marquee'
 import GameCards from '@/components/GameCards'
 import Reviews from '@/components/Reviews'
 import Footer from '@/components/Footer'
+import Laurels from '@/components/Laurels'
 
 import { throttle, forEachRight } from 'lodash'
 import $ from 'jquery'
@@ -42,6 +45,7 @@ export default {
   components: 
     marquee: Marquee 
     'game-cards': GameCards 
+    laurels: Laurels 
     reviews: Reviews 
     'lucre-footer': Footer 
 

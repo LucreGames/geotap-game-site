@@ -10,6 +10,15 @@
     strong Description:
     p Geotap is Lucre Games’ first mobile launch and was thought to be simple a exercise in shipping a title with the goal creating a platform to launch games with emotionally rich experiences that ride a fine line between pure art experiences and traditional game play.
 
+    p 
+      span A detailed article on our design process and what we learned from shipping the v1.0 in 3 weeks: 
+      a(target="_blank" href="https://medium.com/@LucreGames/ship-a-mobile-game-in-3-weeks-go-f0f4391ff6c8") [Read on Medium]
+
+
+    strong Trailer:
+      p
+        iframe(style="max-width: 100%" width="250" :height="250 / (400/712)" src="https://www.youtube.com/embed/1o2nTO3U2vU?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+
     strong Features:
     ul
       li 3 play modes: Classic, Tranquil and Focus
@@ -19,13 +28,6 @@
       li 10 simple shapes + 30 unlockable shapes
       li Discover unique interactive shapes
       li Or just relax
-
-    //- strong Promotion:
-    //- Geotap (black, white logos)
-    //- Lucre (black,white, color logos)
-    //- Screenshots of game
-    //- Photos in device/in location
-    //- Trailer (soon…)
 
     strong Logo Images:
     p 
@@ -47,6 +49,10 @@
     p Sacramento, California
 
     strong Release History:
+    p 
+      span v3.0 - Apr 23, 2018 
+      b Coming soon! 
+    p v2.3 - Mar 8, 2018
     p v2.0 - Dec 7, 2017
     p v1.1 - Oct 30, 2017
     p v1.0 - Sep 19, 2017
